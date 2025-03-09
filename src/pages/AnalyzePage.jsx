@@ -2,7 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 
-const ANALYSIS_API_URL = 'http://13.233.122.58:8000'; // Update with your FastAPI server URL
+const ANALYSIS_API_URL = 'http://localhost:8000'; // --> Use this when running on local else use --> 'http://13.233.122.58:8000'
 
 const AnalyzePage = () => {
     const { userId } = useParams();
